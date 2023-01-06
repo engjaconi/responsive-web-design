@@ -29,7 +29,7 @@ body > header {
     display: flex;
     position: fixed;
     width: 100%;
-    height: 140px;
+    height: 150px;
     padding: 10px;
     background-color: var(--color1);
     color: var(--white);
@@ -49,6 +49,7 @@ body > header > img {
     width: 1.5rem;
     color: var(--white);
     margin-top: -10px;
+    margin-top: 3px;
 }
 
 body > header > nav > ul > li {
@@ -70,7 +71,7 @@ body > main {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 140px;
+    padding-top: 150px;
 }
 
 body > main > form {
