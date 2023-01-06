@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+:root {
+    --color1: #3B4B59;
+    --color2: #203F59;
+    --color3: #6D8BA6;
+    --color4: #509CDF;
+    --color5: #8FB6D9;
+    --white: #FFF;
+    --black: #000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color3);
+}
+
+body > nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    background-color: var(--color1);
+    color: var(--white);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+body > nav > ul {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+body > nav > ul > li {
+    margin-right: 30px;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+body > nav > ul > li > a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body > nav > ul > li > a:hover {
+    color: var(--color5);
+}
+
+body > main > section#welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color3);
+}
+
+body > main > section#welcome-section > img {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+h1, h2 {
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--white);
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color1);
+}
+
+body > main > section#projects {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color5);
+    margin-top: -395px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+body > main > section#contact {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color3);
+    color: var(--black);
+    text-align: center;
+}
+
+body > main > section#contact > h2 {
+    padding-bottom: 10px;
+    
+}
+
+body > main > section#contact > p {
+    padding-bottom: 15px;
+}
+
+body > main > section#contact > a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+body > main > section#contact > a:hover {
+    font-size: 1.5rem;
+}
+
+body > main > section#contact > a > i {
+    padding-bottom: 15px;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+footer {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    background-color: var(--color1);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+footer > p {
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+a > .card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+    width: 85%;
+}
+
+.card > h3 {
+    color: var(--white);
+    background-color: var(--color2);
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.card > img {
+    padding: 5px;
+    width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+    
+    body > main > section#welcome-section > img {
+        width: 200px;
+    }
+
+    body > main > section#projects {
+        margin-top: -340px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    body > main > section#contact > p {
+        margin-top: -25px;
+    }
+
+    .card {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--white);
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    }
+    
+    .card:hover {
+        width: 55%;
+    }
+    
+}
