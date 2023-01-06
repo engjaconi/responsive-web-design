@@ -30,7 +30,6 @@ body > nav {
     left: 0;
     height: 70px;
     width: 100%;
-    position: fixed;
     background-color: var(--color1);
     color: var(--white);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
