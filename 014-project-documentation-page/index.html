@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Documentation</title>
+    <link rel="shortcut icon" href="./images/css-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+            <img src="./images/css-logo.png" alt="CSS logo">
+            <h1>CSS Documentation</h1>
+        </header>
+        <ul>
+            <li><a href="#CSS:_Cascading_Style_Sheets" class="nav-link">CSS</a></li>
+            <li><a href="#CSS_basics" class="nav-link">CSS basics</a></li>
+            <li><a href="#What_is_CSS?" class="nav-link">What is CSS</a></li>
+            <li><a href="#Anatomy_of_a_CSS_ruleset" class="nav-link">Anatomy of a CSS ruleset</a></li>
+            <li><a href="#Selecting_multiple_elements" class="nav-link">Selecting multiple elements</a></li>
+            <li><a href="#Changing_the_page_color" class="nav-link">Changing the page color</a></li>
+            <li><a href="#Styling_the_body" class="nav-link">Styling the body</a></li>
+            <li><a href="#Reference" class="nav-link">Reference</a></li>
+        </ul>     
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="CSS:_Cascading_Style_Sheets">
+            <header>
+                CSS: Cascading Style Sheets
+            </header>
+            <p>
+                <strong>Cascading Style Sheets (CSS)</strong> is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+            </p>
+            <p>
+                CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, the development of various parts of CSS specification was done synchronously, which allowed the versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, or even CSS3. There will never be a CSS3 or a CSS4; rather, everything is now CSS without a version number.
+            </p>
+            <p>
+                CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, the development of various parts of CSS specification was done synchronously, which allowed the versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, or even CSS3. There will never be a CSS3 or a CSS4; rather, everything is now CSS without a version number.
+            </p>
+            <p>
+                After CSS 2.1, the scope of the specification increased significantly and the progress on different CSS modules started to differ so much, that it became more effective to develop and release recommendations separately per module. Instead of versioning the CSS specification, W3C now periodically takes a snapshot of the latest stable state of the CSS specification and individual modules progress. CSS modules now have version numbers, or levels, such as CSS Color Module Level 5
+            </p>
+        </section>
+        <section class="main-section" id="CSS_basics">
+            <header>
+                CSS basics
+            </header>
+            <p>
+                CSS (Cascading Style Sheets) is the code that styles web content. CSS basics walks through what you need to get started. We'll answer questions like: How do I make text red? How do I make content display at a certain location in the (webpage) layout? How do I decorate my webpage with background images and colors?
+            </p>
+        </section>
+        <section class="main-section" id="What_is_CSS?">
+            <header>    
+                What is CSS?
+            </header>
+            <p>
+                Like HTML, CSS is not a programming language. It's not a markup language either. CSS is a style sheet language. CSS is what you use to selectively style HTML elements. For example, this CSS selects paragraph text, setting the color to red:
+            </p>
+            <code>
+                <pre>
+    <span class="code">p</span> {
+        <span class="property">color:</span> red;
+    }
+                </pre>
+            </code>
+            <p>
+                Let's try it out! Using a text editor, paste the three lines of CSS (above) into a new file. Save the file as style.css in a directory named styles.
+            </p>
+            <p>
+                To make the code work, we still need to apply this CSS (above) to your HTML document. Otherwise, the styling won't change the appearance of the HTML. (If you haven't been following our project, pause here to read Dealing with files and HTML basics.)
+            </p>
+            <ol>
+                <li>
+                    Open your index.html file. Paste the following line in the head (between the &lt;head&gt; and &lt;/head&gt; tags): <br><br>
+                    
+                    &lt;<span class="code">link</span> <span class="property">href</span>="styles/style.css" <span class="property">rel</span>="stylesheet" /&gt; 
+
+                    <br><br>
+                </li>
+                <li>
+                    Save index.html and load it in your browser. You should see something like this:
+                </li>
+            </ol>
+            <img src="./images/website-screenshot-styled.png" alt="A web page with red text color.">
+            <p>
+                If your paragraph text is red, congratulations! Your CSS is working.
+            </p>
+        </section>
+        <section class="main-section" id="Anatomy_of_a_CSS_ruleset">
+            <header>    
+                Anatomy of a CSS ruleset
+            </header>
+            <p>
+                Let's dissect the CSS code for red paragraph text to understand how it works:
+            </p>
+            <img src="./images/css-declaration-small.png" alt="CSS Declaration">
+            <br>
+            <p>
+                The whole structure is called a ruleset. (The term ruleset is often referred to as just rule.) Note the names of the individual parts:
+            </p>
+            <ul>
+                <li>
+                    Selector
+                    <p>
+                        This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, <p> elements). To style a different element, change the selector.
+                    </p>
+                </li>
+                <li>
+                    Declaration
+                    <p>
+                        This is a single rule like color: red;. It specifies which of the element's properties you want to style.
+                    </p>
+                </li>
+                <li>
+                    Properties
+                    <p>
+                        These are ways in which you can style an HTML element. (In this example, color is a property of the &lt;p&gt; elements.) In CSS, you choose which properties you want to affect in the rule.
+                    </p>
+                </li>
+                <li>
+                    Property value
+                    <p>
+                        To the right of the property—after the colon—there is the property value. This chooses one out of many possible appearances for a given property. (For example, there are many color values in addition to red.)
+                    </p>
+                </li>
+            </ul>
+            <p>
+                Note the other important parts of the syntax:
+            </p>
+            <ul>
+                <li>Apart from the selector, each ruleset must be wrapped in curly braces. ({})</li>
+                <li>Within each declaration, you must use a colon (:) to separate the property from its value or values.</li>
+                <li>Within each ruleset, you must use a semicolon (;) to separate each declaration from the next one.</li>
+            </ul>
+            <p>
+                To modify multiple property values in one ruleset, write them separated by semicolons, like this:
+            </p>
+            <code>
+                <pre>
+    <span class="code">p</span> {
+        <span class="property">color</span>: red;
+        <span class="property">width</span>: 500px;
+        <span class="property">border</span>: 1px solid black;
+    }
+                </pre>
+            </code>
+        </section>
+        <section class="main-section" id="Selecting_multiple_elements">
+            <header>    
+                Selecting multiple elements
+            </header>
+            <p>
+                You can also select multiple elements and apply a single ruleset to all of them. Separate multiple selectors by commas. For example:
+            </p>
+            <code>
+                <pre>
+    <span class="code">p</span>,
+    <span class="code">li</span>,
+    <span class="code">h1</span> {
+        <span class="property">color</span>: red;
+    }
+                </pre>
+            </code>
+        </section>
+        <section class="main-section" id="Changing_the_page_color">
+            <header>Changing the page color</header>
+            <code>
+                <pre>
+    <span class="code">html</span> {
+        <span class="property">background-color</span>: #00539f;
+    }
+                </pre>
+            </code>
+        </section>
+        <section class="main-section" id="Styling_the_body">
+            <header>Styling the body</header>
+            <code>
+                <pre>
+    <span class="code">body</span> {
+        <span class="property">width</span>: 600px;
+        <span class="property">margin</span>: 0 auto;
+        <span class="property">background-color</span>: #ff9500;
+        <span class="property">padding</span>: 0 20px 20px 20px;
+        <span class="property">border</span>: 5px solid black;
+    }
+                </pre>
+            </code>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>
+                Reference
+            </header>
+            <p>All the documentation in this page is taken from MDN.</p>
+            <ul>
+                <li>
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics#anatomy_of_a_css_ruleset" rel="external" target="_blank">developer.mozilla.org</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Developed by Tiago Jaconi</p>
+    </footer>
+</body>
+</html>
